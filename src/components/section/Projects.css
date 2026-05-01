@@ -1,0 +1,428 @@
+#projects{
+    box-sizing: border-box;
+    margin: 100px  0;
+    min-height: 100vh;
+    margin-left: 130px;
+    .line{
+        position: absolute;
+        width: 100%;
+        top: 520px;
+        margin-top: 30px;
+        margin-left: -180PX;
+        border: 1px solid #809188;
+    }
+    .foter{
+        margin-top: 250px;
+        margin-bottom: 50px;
+        margin-left: -100px;
+    }
+    }
+    #projects .Portfolio{
+    display:flex;
+    align-items:center;
+    margin-bottom:60px;
+    gap: 500px;
+    }
+
+    #projects .Portfolio .content p{
+    font-weight:500;
+    font-size:20px;
+    color:#0C96E2;
+    margin-bottom:10px;
+    max-width:600px;
+    }
+
+    #projects .Portfolio .content h1{
+    font-weight:600;
+    font-size:40px;
+    line-height:54px;
+    letter-spacing:-0.03em;
+    }
+
+    #projects .Portfolio .content h1 span{
+    color:#0C96E2;
+    }
+
+    #projects .Portfolio .Github{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:12px 18px;
+    background:#0C96E2;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    &:hover{
+        background-color: #1d6fa5; 
+        transform: translateY(-1px); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+        .slid{
+            position: relative;
+            top: 30px;
+            display: flex;
+            gap: 14px;
+    .left{
+        
+        width: 35.35px;
+        height: 35px;
+        cursor: pointer;
+        border: 1px solid #0C96E2;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 6.42px;
+            height: 8.29px;
+        }
+    }
+    .right{
+        width: 35.35px;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        background: #0C96E2;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    img{
+            width: 6.42px;
+            height: 7.29px;
+        }
+
+    }
+}
+
+    }
+
+    #projects .Portfolio button p{
+    font-weight:500;
+    font-size:14px;
+    color:#fff;
+    }
+
+    #projects .Portfolio button img{
+    width:22px;
+    }
+
+    /* ---------- Projects Grid ---------- */
+
+    .projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    padding-right: 100px;
+    }
+
+    /* ---------- Project Card ---------- */
+
+    .project-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:rgba(0,0,0,0.1) 0px 5px 25px;
+    &:hover{
+        transform: translateY(-3px);
+    }
+    }
+
+    /* image */
+
+    .project-card .img{
+    position:relative;
+    overflow:hidden;
+    }
+
+    .project-card .img img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    }
+
+    /* overlay */
+
+    .project-card .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    opacity:0;
+    transition:0.3s;
+    }
+
+    .project-card:hover .overlay{
+    opacity:1;
+    .icons{
+        display: flex;
+        gap: 10px;
+    }
+    }
+
+    .project-card .overlay img{
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    }
+
+    /* content */
+
+    .project-card .content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 18px;
+    }
+
+    .project-card .content h3{
+    font-weight:600;
+    font-size:22px;
+    color:#1D2130;
+    }
+
+    .project-card .content p{
+    font-size:16px;
+    color:#1D2130;
+    }
+
+    .project-card .content a img{
+    width:28px;
+    }
+    #projects .project-modal {
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    /* max-height: 90vh;     */
+    width: 1200px;
+    overflow-y: auto;     
+    padding: 40px;
+    button{
+        border: none;
+        background: none;
+        margin-bottom: 40px;
+        cursor: pointer;
+        img{
+            margin-bottom: 270px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+        .projectImg{
+            img{
+                width: 600px;
+                height: 330px;
+            }
+        }
+        .description{
+            .title{
+                .parent{
+                    display: flex;
+                    justify-content: space-between;
+                    div{
+                        a{
+                            img{
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                    .dec{
+                        p{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 28px;
+                        letter-spacing: 0.03em;
+                        color: #A6A6A6;
+                        }
+                    }
+                }
+                .decProject{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    a{
+                        button{
+                                width: 163.47px;
+                                height: 51.02px;
+                                background: #0C96E2;
+                                border-radius: 8px;
+                                font-size: 18px;
+                                color: white;
+                                &:hover{
+                                    background-color: #3783b6;
+                                    transform: translateY(-1px) scale(1.02);
+                                    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+                                }
+                            }
+                        }
+                    p{
+
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-align: justify;
+                    width:400px;
+                    }
+                    .Languages{
+
+                        span{
+                            font-weight: 680;
+                            font-size: 20px;
+                            line-height: 28px;
+                            letter-spacing: 0.03em;
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+}
+    .project-flex{
+        display: flex;
+        gap: 20px;
+            .project-card{
+            min-width: 370px;
+            flex-shrink: 0;
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+
+    }
+}
+    .slid{
+    top: 30px;
+    display: flex;
+    gap: 14px;
+    .left{
+        width: 35.35px;
+        height: 35px;
+        cursor: pointer;
+        border: 1px solid #0C96E2;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        &:hover{
+             transform: translateY(-2px); /* رفع الزر قليلاً */
+            box-shadow: 0 10px 25px rgba(12,150,226,0.45);
+        }
+    }
+    .right{
+        width: 35.35px;
+        height: 35px;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #0C96E2;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+             transform: translateY(-2px); /* رفع الزر قليلاً */
+            box-shadow: 0 10px 25px rgba(12,150,226,0.45);
+        }
+    }
+}
+.slider-viewport{
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    position: relative;
+    gap: 10px;
+    padding: 20px 0;
+
+}
+@media (max-width: 992px){
+    #projects{
+        box-sizing: border-box;
+        padding-top:800px; 
+        
+    }
+    
+    #projects .Portfolio{
+        width: 1000px;
+        text-align: center;
+        margin-left: 500px;
+    }
+    #projects .Portfolio .content h1{
+    font-size: 33vw;
+    margin-bottom: 60px;
+    line-height:40vw;    
+    }
+    #projects .Portfolio .content p{
+        font-size: 35vw;
+        margin-bottom: 30px;
+        margin-left: 140px;
+    }
+
+    #projects .Portfolio{
+        flex-direction: column; 
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            margin-right: 20px;
+            p{
+                font-size: 40px;
+            }
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr; 
+        gap: 70px;
+
+    }
+
+    .project-card{
+        width: 1000px;
+        height: 900px;
+        margin-left: 700px;
+        .img{
+            img{
+                width: 100%;
+                height: 700px;
+                object-fit: cover; 
+            }
+            .overlay{
+                .icons{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .content{
+            .dec{
+                h3{
+                    font-size: 15vw;
+                }
+                p{
+                    font-size: 15vw;
+                }
+            }
+        }
+    }
+    .project-card .content a img{
+    width:70px;
+    }
+
+}
+

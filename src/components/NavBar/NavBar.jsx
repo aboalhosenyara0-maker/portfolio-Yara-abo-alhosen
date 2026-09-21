@@ -74,6 +74,7 @@ const NavBar = ({ Name, mode, setMode }) => {
             >
             <img src={bars} alt="" />
             </button>
+            
         </div>
         </nav>
     );

@@ -1,27 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Exo", sans-serif;
-  
 }
+
 body {
   overflow-x: hidden;
+  transition: 0.3s ease;
+  min-height: 100vh;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  transition: 0.3s ease;
-  min-height: 100vh;
-}
-body.dark {
-  background: black !important;
-}
+/* ================= DARK MODE ================= */
+
 .dark-mode {
   background-color: #1B2431;
   color: #ffffff;
@@ -32,12 +29,24 @@ body.dark {
   color: #ffffff;
 }
 
-.dark-mode nav{
-  background-color:#1B2431 ;
+/* ================= DARK MODE NAVBAR ================= */
+
+.dark-mode nav {
+  background-color: #1B2431;
   color: #ffffff;
 }
 
-.dark-mode .nav-menu{
-  background-color:#1B2431 ;
-  color: white;
+.dark-mode .nav-menu {
+  background-color: #1B2431;
+  color: #ffffff;
+}
+
+/* Menu icon */
+.dark-mode nav .bars .icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* X icon */
+.dark-mode nav .bars .close {
+  color: #ffffff;
 }

@@ -57,7 +57,7 @@ const NavBar = ({ Name, mode, setMode }) => {
                     ? "active"
                     : ""
                 }
-            >
+                >
                 <a href={item.link}>{item.content}</a>
             </li>
             ))}
@@ -67,14 +67,17 @@ const NavBar = ({ Name, mode, setMode }) => {
             <button onClick={() => setMode(!mode)}>
             <img src={mode ? sun : moon} alt="" />
             </button>
-
             <button
             className="icon"
             onClick={() => setShow(!show)}
-            >
-            <img src={bars} alt="" />
-            </button>
-            
+        >
+            {show ? (
+                <span className="close">✕</span>
+            ) : (
+                <img src={bars} alt="menu" />
+            )}
+        </button>
+                    
         </div>
         </nav>
     );
